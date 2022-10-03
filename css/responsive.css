@@ -1,24 +1,27 @@
 
+
 @media all and (max-width: 475px) {
     header {
         justify-content: center;
     }
 }
-@media all and (min-width: 400px) and (max-width: 625px){
-   .foot-wrapper{
-    flex-wrap: wrap;
-   }
+
+@media all and (max-width: 1200px){
+    #nav-links {
+        justify-content: space-evenly;
+    }
 }
 
- @media all and (max-width: 399px){
-    .foot-wrapper .foot-left {
-        flex-wrap: wrap;
-        justify-content: center;
+@media all and (max-width: 360px){
+    #search-form {
+        padding: 10px;
     }
+}
 
-    .foot-wrapper{
-        flex-direction: column;
+
+@media all and (max-height: 500px){
+    footer{
+        margin-top: 20px;
+        position: relative;
     }
-
-   
- } 
+}

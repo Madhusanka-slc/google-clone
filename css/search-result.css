@@ -1,0 +1,258 @@
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+header .first-row svg{
+    width: 24px;
+    margin: 8px;
+   
+}
+
+.logo img{
+
+    width: 92px;
+    height: 30px;
+}
+
+
+
+.first-row{
+    padding: 30px 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    padding: 2px 25px;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: white;
+    border: 1px solid #dadce0;
+    color: #202124;
+
+}
+
+.search-bar{
+    width: 450px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.search-box svg{
+   flex-basis: 25px;
+   margin: 15px;
+   cursor: pointer;
+}
+
+.search-box svg:last-of-type{
+   
+}
+
+.search-box:hover{
+
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+}
+.search-box svg:first-of-type{
+    border-right: 1px solid #dadce0;
+    padding-right: 5px;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-container{
+    display: flex;
+    align-items: center;
+
+}
+.login-container span{
+    padding: 2px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: transparent
+   
+  
+}
+.login-container span:hover{
+    background-color: #f5f5f5;
+}
+
+.login-container svg{
+    cursor: pointer;
+    
+}
+
+
+.sign-in {
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 9px 15px;
+    margin: 0 8px;
+    min-width: 80px;
+    text-align: center;
+    letter-spacing: .25px;
+    cursor: pointer;
+}
+
+.sign-in:hover{
+    text-decoration: none;
+    background-color: #1b66c9;
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+}
+
+
+.logo{
+    margin-right: 30px;
+}
+
+/* --------------------------- */
+
+
+
+.second-row ul li svg{
+    width: 16px;
+    margin-right: 5px;
+}
+.second-row ul li {
+    padding: 15px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+.second-row ul li::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #1b66c9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.second-row ul li:hover::after{
+    display: block;
+}
+
+.second-row ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #70757a;
+ 
+
+}
+
+.second-row {
+    display: flex;
+    border-bottom: 1px solid #dadce0 ;
+    align-items: center;
+}
+
+.second-row ul {
+    display: flex;
+    margin-left: 150px;
+}
+
+
+.tool-button{
+    padding: 5px 15px;
+    height: 25px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+    margin-left: 120px;
+    color: #70757a;
+    font-size: 14px;
+}
+
+/* -------------------------- */
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+    padding-left: 50px;
+}
+
+#country{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    display: flex;
+}
+
+#country li a{
+    color: #1b66c9;
+    font-size: 14px;
+}
+#country span{
+    padding-right: 20px;
+    margin-right: 10px;
+    border-right:  1px solid #70757a;
+}
+
+#nav-links{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#nav-links div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#nav-links a{
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+    text-decoration: none;
+}
