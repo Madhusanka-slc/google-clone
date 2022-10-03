@@ -1,94 +1,96 @@
+
 @import url(reset.css);
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
-.clearfix::after{
-    content: "";
+.clearfix::after {
     display: block;
+    content: "";
     clear: both;
 }
-header{
-    height: 60px;
-}
 
-.navbar{
-    padding: 6px 20px;
-
-}
-
-.navbar ul{
-    height: 48px;
+header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-}
-.navbar ul li svg{
-    width: 25px;
-    fill: #5f6368;
+    padding: 6px;
+    height: 60px;
 }
 
-.navbar ul li a{
-    font-size: 13px;
+a {
     text-decoration: none;
-    color: black;
 }
 
-.navbar ul li{
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.navbar ul li:hover a{
+a:hover{
     text-decoration: underline;
 }
 
-.navbar ul li:nth-child(3){
-    padding: 8px;
-    background-color: transparent;
-    border-radius: 50%;
+header > a {
+    display: block;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+#apps {
     display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
 }
 
-.navbar ul li:nth-child(3):hover{
-    background-color:#3c404314;
+#apps:hover {
+    background-color: rgba(60, 64, 67, 0.08);
 }
-.navbar ul li:last-child{
-    min-width: 45px;
-    background-color: #1a73e8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 25px;
-    border-radius: 5px;
-} 
 
-.navbar ul li:last-child:hover{
+#apps > svg {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+#images {
+    padding: 0 15px;
+}
+
+#sign-in {
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin: 0 12px 0 8px;
+    min-width: 96px;
+}
+
+#sign-in:hover{
+    text-decoration: none;
     background-color: #1b66c9;
-    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
 }
 
-.navbar ul li:last-child:focus{
+#sign-in:focus{
     background-color: #1c5fba;
     box-shadow:  0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
-
-
 }
 
-.navbar ul li:last-child:active{
+#sign-in:active{
     background-color: #1b63c1;
     box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
-}
-
-.navbar ul li:last-child span{
-    font-size: 14px;
-    color: white;
 }
